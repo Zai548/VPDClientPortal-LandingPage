@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <div class="content" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8)">
+    <div class="content">
       <!-- Navbar & Hero -->
       <nav class="navbar navbar-expand-lg p-2 sticky-top">
         <div class="container-fluid">
@@ -55,7 +55,7 @@
         <div class="container mt-5 mb-5">
           <div class="row align-items-center">
             <!-- Left Content -->
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-12 col-lg-6">
               <h1
                 class="fw-bold text-light text-center text-sm-start wow fadeInLeft"
               >
@@ -70,7 +70,7 @@
             </div>
 
             <!-- Right Side Carousel -->
-            <div class="col-md-6 d-flex flex-column align-items-end">
+            <div class="col-lg-6 col-md-11 d-flex flex-column align-items-end">
               <div class="carousel-container">
                 <div
                   id="imageCarousel"
@@ -81,22 +81,49 @@
                     <!-- First Slide -->
                     <div class="carousel-item active" data-bs-interval="3000">
                       <img
-                        src="Resources/carousel1.png"
-                        class="d-block w-100"
+                        src="Resources/carousel-image4.png"
+                        class="d-block w-100 image"
                       />
                     </div>
                     <!-- Second Slide -->
                     <div class="carousel-item" data-bs-interval="3000">
                       <img
-                        src="Resources/carousel2.png"
-                        class="d-block w-100"
+                        src="Resources/carousel-image5.png"
+                        class="d-block w-100 image"
                       />
                     </div>
                     <!-- Third Slide -->
                     <div class="carousel-item" data-bs-interval="3000">
                       <img
-                        src="Resources/carousel3.png"
-                        class="d-block w-100"
+                        src="Resources/carousel-image3.png"
+                        class="d-block w-100 image"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="carousel-popup-img">
+                    <div class="popup-img-container">
+                      <span>&times;</span>
+                      <img
+                        id="popup-img"
+                        src="Resources/carousel-image2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <!-- Thumbnail Previews -->
+                    <div class="carousel-thumbnails">
+                      <img
+                        src="Resources/carousel-image4.png"
+                        onclick="changeImage(this)"
+                      />
+                      <img
+                        src="Resources/carousel-image5.png"
+                        onclick="changeImage(this)"
+                      />
+                      <img
+                        src="Resources/carousel-image3.png"
+                        onclick="changeImage(this)"
                       />
                     </div>
                   </div>
@@ -291,7 +318,7 @@
             <a href="#email" class="text-decoration-none">
               <div class="wow zoom-in">
                 <div class="grid-item text-center process-container">
-                  <h1 class="fw-semibold mt-4">Email</h1>
+                  <h2 class="fw-semibold mt-4">Email</h2>
                   <p class="mt-5 ms-3">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Doloremque, delectus.
@@ -302,7 +329,7 @@
             <div class="wow zoom-in">
               <a href="#phone" class="text-decoration-none">
                 <div class="grid-item text-center process-container" id="phone">
-                  <h1 class="fw-semibold mt-4">Phone</h1>
+                  <h2 class="fw-semibold mt-4">Phone</h2>
                   <p class="mt-5 ms-3">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Ullam, quia?
@@ -322,7 +349,7 @@
       <!--VeraCT Contacts ends-->
 
       <!--Footer-->
-      <footer class="text-center text-light py-2 ms-5 me-5">
+      <footer class="text-center text-light py-2">
         <p class="fw-semibold">
           Unit B1, Block 2, Citiplaza 1 Commercial Complex, Tandang Sora Avenue
           Corner Visayas Avenue Extension, Barangay Pasong Tamo, Quezon City
