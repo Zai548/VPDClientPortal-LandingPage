@@ -52,7 +52,7 @@
       </nav>
 
       <!--Hero Starts-->
-      <section class="home-container" id="home">
+      <section class="section-div home-container" id="home">
         <div class="hero-container">
           <div>
             <div class="">
@@ -73,11 +73,13 @@
       <!-- Navbar & Hero ends -->
 
       <!--VeraCT Features-->
-      <div class="features-container">
-        <h1 class="wow fadeInUp">Enhancing Efficiency, One System at a Time</h1>
+      <div class="section-div features-container" id="features">
+        <h1 class="wow fadeInRight">
+          Enhancing Efficiency, One System at a Time
+        </h1>
         <div class="features-wrapper">
           <div class="features-style">
-            <div class="image-wrapper-style">
+            <div class="image-wrapper-style wow fadeInUp">
               <img src="Resources/accounting.png" alt="" />
             </div>
             <div class="wow fadeInUp">
@@ -91,7 +93,7 @@
             </div>
           </div>
           <div class="features-style center-image right-image">
-            <div class="image-wrapper-style">
+            <div class="image-wrapper-style wow fadeInUp">
               <img src="Resources/hr.png" alt="" />
             </div>
             <div class="wow fadeInUp">
@@ -105,7 +107,7 @@
             </div>
           </div>
           <div class="features-style">
-            <div class="image-wrapper-style">
+            <div class="image-wrapper-style wow fadeInUp">
               <img src="Resources/inventory.png" alt="" />
             </div>
             <div class="wow fadeInUp">
@@ -119,7 +121,7 @@
             </div>
           </div>
           <div class="features-style right-image">
-            <div class="image-wrapper-style">
+            <div class="image-wrapper-style wow fadeInUp">
               <img src="Resources/cservice.png" alt="" />
             </div>
             <div class="wow fadeInUp">
@@ -132,7 +134,7 @@
             </div>
           </div>
           <div class="features-style center-image">
-            <div class="image-wrapper-style">
+            <div class="image-wrapper-style wow fadeInUp">
               <img src="Resources/pos.png" alt="" />
             </div>
             <div class="wow fadeInUp">
@@ -146,7 +148,7 @@
             </div>
           </div>
           <div class="features-style right-image">
-            <div class="image-wrapper-style">
+            <div class="image-wrapper-style wow fadeInUp">
               <img src="Resources/erp.png" alt="" />
             </div>
             <div class="wow fadeInUp">
@@ -166,37 +168,59 @@
       <!--VeraCT Features ends-->
 
       <!--VeraCT Process-->
-      <div class="process">
-        <h1 id="process">Easy Steps to Success</h1>
+      <div class="section-div process" id="process">
+        <h1 class="wow fadeInRight">Easy Steps to Success</h1>
         <div class="process-container">
           <div class="process-image-wrapper">
             <img
-              id="process-image"
+              id="default-image"
+              class="active"
               src="Resources/easystep.png"
               alt="Default Image"
             />
+            <img
+              id="step1-image"
+              src="Resources/step1.png"
+              alt="Step 1 Image"
+            />
+            <img
+              id="step2-image"
+              src="Resources/step2.png"
+              alt="Step 2 Image"
+            />
+            <img
+              id="step3-image"
+              src="Resources/step3.png"
+              alt="Step 3 Image"
+            />
           </div>
           <div class="process-style">
-            <div class="box-one" data-image="Resources/step1.png">
-              <h4>Step 1: Onboard with VPD</h4>
-              <p>
-                Our team provides your VeraCT login and assists in setting up
-                your business profile.
-              </p>
+            <div class="process-style-box box-one" data-target="step1-image">
+              <div class="wow slideInRight box-wrapper-one">
+                <h4>Step 1: Onboard with VPD</h4>
+                <p>
+                  Our team provides your VeraCT login and assists in setting up
+                  your business profile.
+                </p>
+              </div>
             </div>
-            <div class="box-two" data-image="Resources/step2.png">
-              <h4>Step 2: Customize & Integrate</h4>
-              <p>
-                Adjust settings, integrate business processes, and begin
-                operations seamlessly.
-              </p>
+            <div class="process-style-box box-two" data-target="step2-image">
+              <div class="wow slideInRight box-wrapper-two">
+                <h4>Step 2: Customize & Integrate</h4>
+                <p>
+                  Adjust settings, integrate business processes, and begin
+                  operations seamlessly.
+                </p>
+              </div>
             </div>
-            <div class="box-three" data-image="Resources/step3.png">
-              <h4>Step 3: Monitor & Optimize</h4>
-              <p>
-                Use real-time data and reports to make smarter business
-                decisions.
-              </p>
+            <div class="process-style-box box-three" data-target="step3-image">
+              <div class="wow slideInRight box-wrapper-three">
+                <h4>Step 3: Monitor & Optimize</h4>
+                <p>
+                  Use real-time data and reports to make smarter business
+                  decisions.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -205,37 +229,28 @@
       <!--VeraCT Process ends-->
 
       <!--VeraCT Contacts-->
-      <div class="contacts">
-        <h1 class="wow fadeInUp" id="contacts">
-          Ready to optimize your business?
-        </h1>
+      <div class="section-div contacts" id="contacts">
+        <h1 class="wow fadeInRight">Ready to optimize your business?</h1>
         <div class="contacts-wrapper">
           <a href="#email" class="text-decoration-none">
             <div class="wow zoom-in">
               <div class="contacts-container">
-                <h2>Email</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Doloremque, delectus.
-                </p>
+                <h4>Email</h4>
+                <p>vpd@vpdbusinesssolution.com</p>
               </div>
             </div>
           </a>
           <a href="#phone" class="text-decoration-none">
             <div class="wow zoom-in">
               <div class="contacts-container" id="phone">
-                <h2>Phone</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Ullam, quia?
-                </p>
+                <h4>Phone</h4>
+                <p>(02)-8721-8960</p>
+                <p>+63917-1230-684</p>
               </div>
             </div>
           </a>
         </div>
-
-        <div class="grid-container3 p-5"></div>
-        <div class="wow fadeInUp">
+        <div class="wow fadeInUp contacts-image-wrapper">
           <a href="#facebook"
             ><i class="bx bxl-facebook-circle contacts-img"></i
           ></a>
@@ -246,14 +261,15 @@
       <!--VeraCT Contacts ends-->
 
       <!--Footer-->
-      <footer class="text-center text-light py-2">
-        <p class="fw-semibold">
-          Unit B1, Block 2, Citiplaza 1 Commercial Complex, Tandang Sora Avenue
-          Corner Visayas Avenue Extension, Barangay Pasong Tamo, Quezon City
-        </p>
-        <p class="fw-semibold" style="margin-top: -20px">
-          Copyright © VPD BUSINESS SOLUTIONS INC. 2022 - 2025
-        </p>
+      <footer>
+        <div class="footer-wrapper">
+          <p>
+            Unit B1, Block 2, Citiplaza 1 Commercial Complex, Tandang Sora
+            Avenue Corner Visayas Avenue Extension, Barangay Pasong Tamo, Quezon
+            City
+          </p>
+          <p>Copyright © VPD BUSINESS SOLUTIONS INC. 2022 - 2025</p>
+        </div>
       </footer>
       <!--Footer ends-->
     </div>

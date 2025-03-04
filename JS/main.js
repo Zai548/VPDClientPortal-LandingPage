@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("section"); // Select all sections
+  const sections = document.querySelectorAll(".section-div"); // Select all sections
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
   function changeActiveLink() {
@@ -37,18 +37,22 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", changeActiveLink);
 });
 
-// Ensure script runs only when the page loads completely
 document.addEventListener("DOMContentLoaded", function () {
-  const processImage = document.getElementById("process-image");
-  const steps = document.querySelectorAll(".process-style div");
+  const defaultImage = document.getElementById("default-image");
+  const images = document.querySelectorAll(".process-image-wrapper img");
+  const steps = document.querySelectorAll(".process-style-box ");
 
   steps.forEach((step) => {
     step.addEventListener("mouseenter", function () {
-      processImage.src = step.getAttribute("data-image");
+      let targetId = step.getAttribute("data-target");
+
+      images.forEach((img) => img.classList.remove("active")); // Hide all images
+      document.getElementById(targetId).classList.add("active"); // Show target image
     });
 
     step.addEventListener("mouseleave", function () {
-      processImage.src = "Resources/easystep.png"; // Revert to default image
+      images.forEach((img) => img.classList.remove("active")); // Hide all images
+      defaultImage.classList.add("active"); // Show default image again
     });
   });
 });
